@@ -1,0 +1,26 @@
+<!--This code is for add book page-->
+
+{% extends "base.html" %}
+{% block title %}Add Book{% endblock %}
+
+{% block content %}
+<h2>Add a New Book</h2>
+<form method="POST">
+    <label>Author:</label><br>
+    <input type="text" name="author" required>
+    
+    <br><br>
+
+    <label>Language:</label><br>
+    <input type="text" name="language" required>
+    
+    <br><br>
+
+    <label>Title:</label><br>
+    <input type="text" name="title" required>
+    
+    <br><br>
+
+    <button type="submit">Add Book</button>
+</form>
+{% endblock %}

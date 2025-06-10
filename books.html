@@ -1,0 +1,50 @@
+<!-- templates/books.html -->
+{% extends "base.html" %}
+{% block title %}View Books{% endblock %}
+
+{% block content %}
+<h2>Books List</h2>
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Author</th>
+            <th>Language</th>
+            <th>Title</th>
+            <th>Actions</th> 
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.id }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.language }}</td>
+            <td>{{ book.title }}</td>
+            <td>
+            {% if book.is_available %}
+                ✅ Available
+            {% else %}
+                ❌ Checked Out
+            {% endif %}
+        </td>
+
+        <!-- 🔄 Action: Check Out / Check In -->
+        <td>
+            {% if book.is_available %}
+                <a href="{{ url_for('check_out_book', book_id=book.id) }}">Check Out</a>
+            {% else %}
+                <a href="{{ url_for('check_in_book', book_id=book.id) }}">Check In</a>
+            {% endif %}
+        </td>
+
+        <!-- ✏️ Existing Edit/Delete actions -->
+        <td>
+            <a href="{{ url_for('edit_book', book_id=book.id) }}">Edit</a> |
+            <a href="{{ url_for('delete_book', book_id=book.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
+        </td> 
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!-- templates/edit_book.html -->
+{% extends "base.html" %}
+{% block title %}Edit Book{% endblock %}
+
+{% block content %}
+<h2>Edit Book</h2>
+<form method="POST">
+    <label for="author">Author:</label>
+    <input type="text" name="author" id="author" value="{{ book.author }}" required><br><br>
+
+    <label for="language">Language:</label>
+    <input type="text" name="language" id="language" value="{{ book.language }}" required><br><br>
+
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" value="{{ book.title }}" required><br><br>
+
+    <input type="submit" value="Update Book">
+</form>
+{% endblock %}
