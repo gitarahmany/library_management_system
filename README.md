@@ -13,22 +13,22 @@ Project Structure:
 Main Folder:library-management  | /+ app.py |  /+ README.md |  /+static// css/// styles.css | +instance//  library.db  | /+ templates// base.html,  login.html,  register.html, books.html, add_book.html, edit_book.html, search.html, 
 
 Default Pages:
-register 
-login
-View all books 
-Add new books
-Search for books
-edit
-delete
-checkout
-checkin
+register, 
+login,
+View all books, 
+Add new books,
+Search for books,
+edit,
+delete,
+checkout,
+checkin.
 
 Technologies Used:
-Python 3
-Flask
-SQLite
-HTML5 
-CSS3
+Python 3,
+Flask,
+SQLite,
+HTML5, 
+CSS3,
 
  Running on:  http://127.0.0.1:5000
 
