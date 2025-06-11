@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-   <nav>
+   <nav>   <!--navigation menu-->>
     <a href="{{ url_for('add_book') }}">Add Book</a> |
     <a href="{{ url_for('view_books') }}">View Books</a> |
     <a href="{{ url_for('search_books') }}">Search</a> |
     
-    {% if current_user.is_authenticated %}
+    {% if current_user.is_authenticated %}  <!--checks if the user is logged in-->>
         Welcome, {{ current_user.name }} |
         <a href="{{ url_for('logout') }}">Logout</a>
     {% else %}
