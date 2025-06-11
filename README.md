@@ -1,6 +1,6 @@
 Library Management System (Flask + SQLite)
 
-This is a beginner-friendly “Library Management System” that is  built using Flask, SQLite, and SQLAlchemy. It supports user authentication, book management (CRUD), search, and book check-in/check-out functionality.
+This is a beginner-friendly “Library Management System” that is  built using Flask, SQLite, and SQLAlchemy. It supports user authentication, book management, search, and book check-in/check-out functionality.
 
 Features:
 -  User Registration and Login 
