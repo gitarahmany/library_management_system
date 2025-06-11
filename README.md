@@ -36,6 +36,7 @@ Screenshot:
 ![readme](https://github.com/user-attachments/assets/b90d7da6-4241-4af1-82e8-8362586f7380)
 
 
+![image](https://github.com/user-attachments/assets/82f630fb-4da3-49d8-bf4f-a154794156fc)
 
 
 
