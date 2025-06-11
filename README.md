@@ -13,11 +13,11 @@ Project Structure:
 Main Folder:library-management  | /+ app.py |  /+ README.md |  /+static// css/// styles.css | +instance//  library.db  | /+ templates// base.html,  login.html,  register.html, books.html, add_book.html, edit_book.html, search.html, 
 
 Default Pages:
-register – Create a new user account
-login – Login to your account
-books – View all books 
-add – Add new books
-search – Search for books
+register 
+login
+View all books 
+Add new books
+Search for books
 edit
 delete
 checkout
